@@ -8,14 +8,18 @@
 <body>
 <main class="wrap">
   <header class="top"><div class="brand"><div class="logo">⌂</div><span>WG-Dienste</span></div><div class="today" id="today"></div></header>
-  <section class="hero"><div><div class="eyebrow">Gemeinsam läuft's</div><h1>Ein Zuhause,<br>das alle mittragen.</h1><p class="sub">Kleine Aufgaben, fair verteilt. Hakt ab, was erledigt ist.</p></div><div class="progress"><div class="progress-top"><span>Fortschritt</span><span id="progressText"><b>0</b> von 0 erledigt</span></div><div class="track"><div class="fill" id="progressFill"></div></div></div></section>
-  <section class="toolbar"><span class="toolbar-label">Eure Aufgaben nach Rhythmus</span><button class="add" id="addBtn">＋&nbsp; Aufgabe eintragen</button></section>
+  <section class="hero"><div><div class="eyebrow">Gemeinsam läuft's</div><h1>Ein Zuhause,<br>das alle mittragen.</h1><p class="sub">Diese Aufgaben stehen jeden Montagabend an. Hakt ab, was erledigt ist.</p></div><div class="progress"><div class="progress-top"><span>Fortschritt</span><span id="progressText"><b>0</b> von 0 erledigt</span></div><div class="track"><div class="fill" id="progressFill"></div></div></div></section>
+  <section class="monday-panel"><div class="eyebrow">Euer nächster Dienstplan</div><h2>Aufgaben für Montag, <span id="mondayDate"></span></h2><div id="mondayItems" class="monday-items"></div></section><section class="toolbar"><span class="toolbar-label">Alle Aufgaben – Übersicht</span><button class="add" id="addBtn">＋&nbsp; Aufgabe eintragen</button></section>
   <section class="groups" id="groups"></section>
-  <div class="note">Deine Änderungen werden automatisch auf diesem Gerät gespeichert.</div>
+  <div class="note">Wiederholung: jeden Montag um 18:00 Uhr · Deine Änderungen werden auf diesem Gerät gespeichert.</div>
 </main>
-<div class="overlay" id="overlay"><form class="modal" id="form"><h2>Aufgabe eintragen</h2><p>Was steht als Nächstes im WG-Plan an?</p><label class="label" for="taskInput">Aufgabe</label><input class="field" id="taskInput" maxlength="70" placeholder="z. B. Küche gründlich putzen" autocomplete="off" required><span class="label">Wie oft?</span><div class="choices" id="choices"><button class="choice selected" type="button" data-freq="weekly">Wöchentlich</button><button class="choice" type="button" data-freq="biweekly">Alle 2 Wochen</button><button class="choice" type="button" data-freq="monthly">Monatlich</button></div><div class="modal-actions"><button type="button" class="cancel" id="cancel">Abbrechen</button><button class="save" type="submit">Eintragen</button></div></form></div><div class="toast" id="toast"></div>
+<div class="overlay" id="overlay"><form class="modal" id="form"><h2>Aufgabe eintragen</h2><p>Was steht als Nächstes im WG-Plan an?</p><label class="label" for="taskInput">Aufgabe</label><input class="field" id="taskInput" maxlength="70" placeholder="z. B. Küche gründlich putzen" autocomplete="off" required><span class="label">Wie oft?</span><div class="choices"><button class="choice selected" type="button" data-freq="weekly">Wöchentlich</button><button class="choice" type="button" data-freq="biweekly">Alle 2 Wochen</button><button class="choice" type="button" data-freq="monthly">Monatlich</button></div><div class="weekly-note">Monatliche Aufgaben werden gleichmäßig auf vier Wochen verteilt.</div><div class="modal-actions"><button type="button" class="cancel" id="cancel">Abbrechen</button><button class="save" type="submit">Eintragen</button></div></form></div><div class="toast" id="toast"></div>
 <script src="WG-Dienste.js"></script>
 </body></html>
+
+
+
+
 
 
 
